@@ -1,0 +1,5 @@
+.fg-canvas, .bg-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}

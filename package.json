@@ -1,0 +1,23 @@
+{
+  "name": "mario-bros",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "babel": "babel --modules amd src -d dist --presets es2015",
+    "browserify": "browserify dist/main.js -o dist/bundle.js",
+    "test": "./node_modules/.bin/mocha --compilers js:babel-core/register ./tests/*.test.js",
+    "build": "npm run babel && npm run browserify"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-preset-es2015": "^6.24.1",
+    "browserify": "^14.4.0",
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2",
+    "require": "^2.4.20"
+  }
+}
